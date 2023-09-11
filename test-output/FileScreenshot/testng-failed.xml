@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FileScreenshot]">
+  <test thread-count="5" name="Test06(failed)">
+    <classes>
+      <class name="com.Files.ScreenshotwebElement">
+        <methods>
+          <include name="date"/>
+        </methods>
+      </class> <!-- com.Files.ScreenshotwebElement -->
+    </classes>
+  </test> <!-- Test06(failed) -->
+</suite> <!-- Failed suite [FileScreenshot] -->

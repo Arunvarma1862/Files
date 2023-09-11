@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HelloSuite">
+  <test  name="ByeTest01">
+    <classes>  
+      <class name="com.test.A1">
+		  <methods>
+			  <include name="B2"/>
+		  </methods>
+	  </class>
+    </classes>
+  </test> 
+   <test  name="ByeTest02">
+    <classes>  
+      <class name="com.test.A2">
+		  <methods>
+			  <include name="B4"/>
+				  	  <include name="B5"/>
+		  </methods>
+	  </class>
+    </classes>
+  </test> 
+   <test  name="ByeTest03">
+    <classes>  
+      <class name="com.test.A3">
+		  <methods>
+			  <include name="B6"/>
+				    <include name="B8"/>
+		  </methods>
+	  </class>
+    </classes>
+  </test> 
+  
+</suite> 

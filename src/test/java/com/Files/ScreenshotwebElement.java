@@ -18,8 +18,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ScreenshotwebElement {
 	
-	
-	public static void main(String[] args) throws IOException {
+	@Test
+	public void webelementScreenshot() throws IOException {
 		
 		  WebDriverManager.chromedriver().setup();
 		  ChromeOptions  options = new ChromeOptions();
@@ -28,10 +28,10 @@ public class ScreenshotwebElement {
 		  driver.manage().window().maximize();
 		  driver.get("https://en.wikipedia.org/wiki/Hello_(Adele_song)");
 		  
-	WebElement logo=	  driver.findElement(By.xpath("//img[@class='mw-logo-icon']"));
+	  WebElement logo=	  driver.findElement(By.xpath("//img[@class='mw-logo-icon']"));
 	
-	Date d = new Date();
-    String FileName = d.toString().replace(":", "_").replace(" ", "_") + "  logo.png";	  
+	    Date d = new Date();
+        String FileName = d.toString().replace(":", "_").replace(" ", "_") + "  logo.png";	  
 		File src=  logo.getScreenshotAs(OutputType.FILE);
 		File des= new File("./screenshot/"+ FileName );
 		FileUtils.copyFile(src, des);
@@ -40,7 +40,7 @@ public class ScreenshotwebElement {
 		  
 	}
 	
-	@Test
+	//@Test
 	public void date(String date) {
 		 SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 	     Date date1 = new Date();

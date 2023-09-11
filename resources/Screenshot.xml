@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FileScreenshot">
+	<test name="Test05" enabled="false">
+		<classes>
+			<class name="com.Files.FileScreenshot"/>
+			
+		</classes>
+
+	</test>
+	
+	<test name="Test06" >
+		<classes>
+			<class name="com.Files.ScreenshotwebElement"/>
+		
+		</classes>
+
+	</test>
+
+</suite>

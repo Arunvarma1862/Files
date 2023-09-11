@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Files.Screenshot">
+      <class name="com.Files.FileScreenshot">
         <methods>
           <include name="setup"/>
+          <include name="verfiy"/>
           <include name="TearDown"/>
           <include name="AfterMethod"/>
-          <include name="verfiy"/>
         </methods>
-      </class> <!-- com.Files.Screenshot -->
+      </class> <!-- com.Files.FileScreenshot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

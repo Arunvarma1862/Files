@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite  name="demosuite">
+	
+	<test name="Test01">
+		<classes>
+			<class name="com.test.A1">
+				<methods>
+					<include name ="B1"/>
+				</methods>
+			</class>
+			<class name="com.test.A2">
+				<methods>
+					<include name ="B3"/>
+						<include name ="B5"/>
+				</methods>
+			</class>
+			<class name="com.test.A3">
+				<methods>
+					<include name ="B8"/>
+						<include name ="B10"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
