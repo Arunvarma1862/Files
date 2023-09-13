@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [FileScreenshot]">
-  <test thread-count="5" name="Test06(failed)">
+  <test thread-count="5" name="Test05(failed)">
     <classes>
-      <class name="com.Files.ScreenshotwebElement">
+      <class name="com.Files.FileScreenshot">
         <methods>
-          <include name="date"/>
+          <include name="setup"/>
+          <include name="verfiy"/>
+          <include name="AfterMethod"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- com.Files.ScreenshotwebElement -->
+      </class> <!-- com.Files.FileScreenshot -->
     </classes>
-  </test> <!-- Test06(failed) -->
+  </test> <!-- Test05(failed) -->
 </suite> <!-- Failed suite [FileScreenshot] -->

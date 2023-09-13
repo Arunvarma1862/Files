@@ -8,9 +8,47 @@
 
 	</test>
 	
-	<test name="Test06" >
+	<test name="Test06" enabled="false" >
 		<classes>
-			<class name="com.Files.ScreenshotwebElement"/>
+			<class name="com.Files.ScreenshotwebElement"></class>
+			<methods>
+			<include name="logo"/>
+			
+			</methods>
+		
+		</classes>
+
+	</test>
+	
+	<test name="Test07" enabled="false" >
+		<classes>
+			<class name="com.Files.ScreenshotwebElement"></class>
+			<methods>
+			<include name="fullPage"/>
+			
+			</methods>
+		
+		</classes>
+
+	</test>
+	<test name="Test08" enabled="false" >
+		<classes>
+			<class name="com.Files.ScreenshotwebElement"></class>
+			<methods>
+			<include name="sectionOfthePage"/>
+			
+			</methods>
+		
+		</classes>
+
+	</test>
+	<test name="Test09" enabled="false" >
+		<classes>
+			<class name="com.Files.ScreenshotwebElement"></class>
+			<methods>
+			<include name="elementOfthePage"/>
+			
+			</methods>
 		
 		</classes>
 

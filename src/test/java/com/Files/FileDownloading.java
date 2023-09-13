@@ -35,7 +35,7 @@ public class FileDownloading {
 	
 public static 	WebDriverWait wait;
 WebDriver driver;
- String expectedfile="chromedriver_win32 (1).zip";
+ String expectedfile="chromedriver_win32.zip";
  String location="C:\\Users\\Innodeed Systems\\Documents\\DownloadfromAuto";
 
 
@@ -110,11 +110,9 @@ public void intialize( @Optional("chrome")   String browser) {
           WebElement download=      driver.findElement(By.xpath("//a[text()='chromedriver_win32.zip']")) ;
          Actions action = new Actions(driver);
          action.moveToElement(download).click().perform();
-        uff.waitForFileDownload(driver, location, expectedfile);
+         uff.waitForFileDownload(driver, location, expectedfile);
        
-         
-       
- 
+  
      }
 @Parameters("ThreadSleep")
 @AfterTest

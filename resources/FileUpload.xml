@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <suite name="fileUpload">
-	<test name="Test01"  enabled="false">
+	<test name="Test01"  enabled="true">
 		<classes>
 			<class name="com.Files.FileUploading" ></class>
 			<methods>
@@ -12,7 +12,7 @@
 
 		</classes>
 	</test>
-	<test name="Test02" enabled="true">
+	<test name="Test02" enabled="false">
 		<classes>
 			<class name="com.Files.FileUploading" ></class>
 			<methods>

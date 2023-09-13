@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [fileUpload]">
-  <test thread-count="5" name="Test02(failed)">
+<suite name="Failed suite [FileDownload]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="ThreadSleep" value="3000"/>
+  <parameter name="url" value="https://chromedriver.storage.googleapis.com/index.html?path=79.0.3945.36/"/>
+  <test thread-count="5" name="Test5(failed)">
     <classes>
-      <class name="com.Files.FileUploading">
+      <class name="com.Files.FileDownloading">
         <methods>
-          <include name="FileUploadbyRobotclass"/>
-          <include name="teardown"/>
+          <include name="fileDownload"/>
           <include name="intialize"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- com.Files.FileUploading -->
+      </class> <!-- com.Files.FileDownloading -->
     </classes>
-  </test> <!-- Test02(failed) -->
-</suite> <!-- Failed suite [fileUpload] -->
+  </test> <!-- Test5(failed) -->
+</suite> <!-- Failed suite [FileDownload] -->

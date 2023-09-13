@@ -34,8 +34,7 @@ public class FileUploading {
 		
 		// driver.get("https://the-internet.herokuapp.com/upload");
 		driver.get("https://blueimp.github.io/jQuery-File-Upload/");
-		// driver.get("https://demoqa.com/upload-download");
-		
+		// driver.get("https://demoqa.com/upload-download");	
 	//	driver.get("https://demo.guru99.com/selenium/upload/");
 		
 	}
@@ -90,8 +89,6 @@ public class FileUploading {
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 		rb.delay(2000);
-
-
 
 		rb.keyPress(KeyEvent.VK_ENTER); 
 		rb.keyRelease(KeyEvent.VK_ENTER);

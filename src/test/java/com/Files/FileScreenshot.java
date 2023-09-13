@@ -51,21 +51,22 @@ public class FileScreenshot {
 	@Test
 	public void verfiy() throws InterruptedException {
 		
-	   //	driver.get("https://en.wikipedia.org/wiki/Hello_(Adele_song)");
-      //	 driver.get("https://github.com/login");
-	  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+//	   driver.get("https://en.wikipedia.org/wiki/Hello_(Adele_song)");
+  //     driver.get("https://github.com/login");
+	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+     //  driver.get("https://www.selenium.dev/");
 	  
 	  
 	                                                                                       // Hello website
 
-	/*	String Actualtitle = driver.getTitle();
+/*		String Actualtitle = driver.getTitle();
 		String ExpectedTitle = "Hello (Adele song) - Wikipediaa";
 		Assert.assertEquals(Actualtitle, ExpectedTitle, "Title is mismatched");*/
 	  
 	  
 	                                                                               // Github login
 	
-   /*  wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login_field"))).sendKeys("arunbabu120894@gmail.com");
+  /*   wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login_field"))).sendKeys("arunbabu120894@gmail.com");
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password"))).sendKeys("Arungit1862");
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='commit']"))).click();
     
@@ -76,21 +77,24 @@ public class FileScreenshot {
            System.out.println("login successfully");
            Thread.sleep(2000);*/
                                                                                                // Orange hrm
-	     Thread.sleep(2000);
+	    Thread.sleep(2000);
            wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("username"))).sendKeys("Admin");
            Thread.sleep(500);
-           wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password"))).sendKeys("admin123");
+           wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password"))).sendKeys("admin1234");
            Thread.sleep(500);
            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@type='submit']"))).click();
            Thread.sleep(2000);
            
            Assert.assertTrue(driver.findElement(By.xpath("//p[text()='Paul Collings']")).isDisplayed(),"login not succesfully");  
+           System.out.println("login successfully");
+           Thread.sleep(5000);
            
      //      WebElement  username= driver.findElement(By.xpath("//p[text()='Paul Collings']"));
      //      Assert.assertTrue(username.isDisplayed(),"login not succesfully");  
      //      Assert.assertTrue(username.getText().startsWith("P"),"login not successfully");
-              System.out.println("login successfully");
-             Thread.sleep(5000);
+           
+           
+          
                
    
 
